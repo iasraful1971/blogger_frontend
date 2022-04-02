@@ -1,0 +1,68 @@
+.elements-numberOf-search-add_new {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  .loading-elements {
+    .elements {
+      padding-top: 15px;
+      table {
+        width: 100%;
+        border-spacing: 0;
+        tr {
+          text-align: left;
+          th,
+          td {
+            padding: 3px 8px;
+          }
+        }
+        thead {
+          tr {
+            th {
+              padding: 8px;
+            }
+          }
+          background-color: #f0f0f0;
+        }
+        tbody {
+          tr {
+            transition: all 0.5s;
+
+            &:hover {
+              background-color: #d8d4d4;
+            }
+            img {
+              display: flex;
+            }
+            td {
+              img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                border-radius: 30px;
+                margin: 5px 0;
+              }
+              span.sus,
+              span.unSus {
+                background-color: red !important;
+              }
+              span,
+              a {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                color: #fff;
+                background-color: rgb(59, 174, 250);
+                font-weight: bold;
+                font-size: 12px;
+                border: 1px solid transparent;
+                padding: 2px 5px;
+                margin-right: 5px;
+                border-radius: 4px;
+                transition: all 0.5s;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

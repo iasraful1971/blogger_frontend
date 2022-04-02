@@ -1,0 +1,105 @@
+.add-article {
+  margin-left: 275px;
+  padding: 90px 12px 12px 12px;
+  .add {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: rgba(161, 159, 159, 0.08) 0px 4px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    form {
+      .form-group.img_upload {
+        position: relative;
+        .upload {
+          position: absolute;
+          right: 10px;
+          label {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            padding-left: 0;
+          }
+          #upload_image {
+            display: none;
+          }
+        }
+      }
+      .form-group {
+        .submit-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          button {
+            background-color: #003140;
+            width: 30%;
+            height: 40px;
+            padding: 15px 20px;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.5s;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+              rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            &:hover {
+              background: #000;
+            }
+          }
+        }
+        label {
+          color: #404040;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        p.error {
+          color: red;
+          font-weight: bold;
+          font-size: 14px;
+          display: none;
+        }
+        .form-control {
+          margin: 4px 0;
+        }
+        .image-select {
+          margin: 5px 0 15px 0;
+          border: 1px solid #dee2e6;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 35px;
+          label {
+            padding: 0 6px;
+            background-color: #3e67ec;
+            color: #fff;
+            border-radius: 2px;
+            cursor: pointer;
+            font-weight: bold;
+            height: 35px;
+            font-size: 16px;
+            align-items: center;
+            display: flex;
+            transition: all 0.5s;
+            &:hover {
+              background: #083ff7;
+            }
+          }
+          span {
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+            color: #404040;
+          }
+        }
+        #image {
+          display: none;
+        }
+      }
+      .update {
+        background-color: #003140 !important;
+        color: #dee2e6 !important;
+      }
+    }
+  }
+}

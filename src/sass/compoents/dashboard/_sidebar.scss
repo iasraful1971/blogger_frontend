@@ -1,0 +1,103 @@
+.dashboard-main-content-sidebar {
+  width: 275px;
+  background-color: rgb(39, 42, 77);
+  height: 100vh;
+  position: fixed;
+  box-shadow: var(--box-shadow);
+  left: 0;
+  top: 70px;
+  transition: all 0.5s;
+  z-index: 999;
+  overflow-y: auto;
+  ul {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    input {
+      display: none;
+    }
+    #article:checked ~ li .article-category {
+      height: 70px !important;
+    }
+    #article:checked ~ li label span.right_icon1 {
+      transform: rotate(90deg) !important;
+    }
+
+    #category:checked ~ li .category-category {
+      height: 70px !important;
+    }
+    #category:checked ~ li label span.right_icon2 {
+      transform: rotate(90deg);
+    }
+
+    #tag:checked ~ li .tag-category {
+      height: 70px !important;
+    }
+    #tag:checked ~ li label span.right_icon3 {
+      transform: rotate(90deg);
+    }
+
+    #user:checked ~ li .user-category {
+      height: 70px !important;
+    }
+    #user:checked ~ li label span.right_icon4 {
+      transform: rotate(90deg);
+    }
+
+    li {
+      min-height: 35px;
+      label {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        cursor: pointer;
+        color: #f9f9f9;
+        span.right_icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+        }
+        h3 {
+          color: #f9f9f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-gap: 8px;
+          span {
+            font-size: 15px;
+            svg {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+      .article-category,
+      .category-category,
+      .tag-category,
+      .user-category {
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s;
+        height: 0;
+        overflow: hidden;
+        a {
+          cursor: pointer;
+          color: #d3cece;
+          padding: 8px 0 8px 20px;
+          display: flex;
+
+          align-items: center;
+          grid-gap: 8px;
+          span {
+            font-weight: 800;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

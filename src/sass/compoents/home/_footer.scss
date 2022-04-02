@@ -1,0 +1,116 @@
+#footer {
+  background: #0f1012;
+  .footer {
+    .container {
+      .row {
+        .col-4 {
+          .title {
+            padding: 24px 0;
+            h3 {
+              color: #fff;
+              font-size: 18px;
+              text-transform: capitalize;
+              font-weight: 800;
+            }
+          }
+          .some-recent-articles {
+            margin-bottom: 20px;
+            .row {
+              .col-4 {
+                width: 100px;
+                height: 80px;
+                .image {
+                  height: 100%;
+                  width: 100%;
+                  img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                  }
+                }
+              }
+              .col-8 {
+                .title-link {
+                  padding: 0 4px 0 14px;
+                  a {
+                    font-size: 14px;
+                    color: #f6f6f6;
+                    font-weight: bold;
+                    transition: all 0.3s;
+                    &:hover {
+                      color: #1e85ec;
+                    }
+                  }
+                  span {
+                    color: rgb(214, 207, 207);
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 2.5;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .title-cate-tag {
+          padding: 0px 22px;
+
+          .cate-tag {
+            .cate {
+              ul.cate-list {
+                .cate-item {
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 3px 0;
+                  cursor: pointer;
+                  transition: all 0.4s;
+                  li {
+                    display: flex;
+                    align-items: center;
+                    color: #f9f9f9;
+                    a {
+                      color: #f6f6f6;
+                      font-weight: bold;
+                      font-size: 14px;
+                      transition: all 0.4s;
+                      &:hover {
+                        color: #eb9143;
+                      }
+                    }
+                  }
+                  span {
+                    color: #f9f9f9;
+                  }
+                }
+              }
+            }
+            .tag {
+              ul.tag-list {
+                display: flex;
+                flex-wrap: wrap;
+                grid-gap: 8px;
+                li.tag-item {
+                  padding: 5px 8px;
+                  background-color: #1473ec;
+                  transition: all 0.5s;
+                  border-radius: 2px;
+                  a {
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: lowercase;
+                  }
+                  &:hover {
+                    background-color: #4d85ce;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

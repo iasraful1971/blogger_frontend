@@ -1,0 +1,35 @@
+#copyright {
+  position: relative;
+  padding: 10px 0;
+  background-color: black;
+  .row {
+    .col-6 {
+      .right-side {
+        ul {
+          justify-content: flex-end !important;
+          li {
+            a {
+              color: #f9f9f9 !important;
+            }
+          }
+        }
+      }
+      .right-side,
+      .left-side {
+        ul {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          li {
+            padding: 4px 8px 4px 0px;
+            color: #f9f9f9 !important;
+            a {
+              color: aquamarine;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

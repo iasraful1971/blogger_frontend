@@ -1,0 +1,92 @@
+.dashboard-articles {
+  .article-action-pagination {
+    min-height: calc(100vh - 100px);
+    padding: 10px 14px;
+    background: #ffff;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    .height-70vh {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      .articles {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 13px;
+        width: 100%;
+        .article {
+          position: relative;
+          min-height: 250px;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          background-color: #fff;
+          box-shadow: var(--box_shadow);
+          padding: 8px;
+          border: 1px solid transparent;
+          box-shadow: rgba(63, 60, 60, 0.2) 0px 2px 8px 0px;
+
+          img {
+            width: 100%;
+            margin-bottom: 8px;
+            height: 180px;
+            object-fit: cover;
+          }
+          a {
+            color: #000 !important;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          p {
+            color: #404040;
+            margin-bottom: 6px;
+            font-size: 13px;
+          }
+          .action {
+            position: absolute;
+            transform: scale(0);
+            transition: all 0.5s;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 8px;
+            z-index: 99;
+            color: #fff;
+          }
+          &:hover {
+            .action {
+              transform: scale(1) !important;
+            }
+          }
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+          }
+          span {
+            margin-right: 8px;
+            background-color: #fa0d90;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:first-child {
+              background-color: #c7c5c5;
+            }
+            &:last-child {
+              background-color: #f44336;
+            }
+          }
+        }
+      }
+    }
+  }
+}

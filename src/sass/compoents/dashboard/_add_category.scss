@@ -1,0 +1,47 @@
+.add-category {
+  .add {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: rgba(161, 159, 159, 0.08) 0px 4px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    form {
+      .form-group {
+        margin: 10px 0;
+        label {
+          font-weight: bold;
+          margin: 5px 0;
+          display: block;
+          text-transform: capitalize;
+          font-size: 15px;
+        }
+        .message {
+          height: 150px;
+          min-height: 120px;
+        }
+        p.error {
+          font-size: 14px;
+          font-weight: 600;
+          color: red;
+          display: none;
+        }
+      }
+      .button-category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+          background-color: black;
+          color: #fff;
+          transition: all 0.4s;
+          padding: 10px 50px;
+          border-radius: 4px;
+          &:hover {
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+}

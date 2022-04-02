@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&display=swap");
+
+:root {
+  --fixed_white: #fff;
+  --fixed_dark: #404040;
+  --text_color: #2c2f34;
+  --second_bg: #f0f0f0;
+  --main_bg: #ffffff;
+  --border_color: #dee2e6;
+  --shadow_color: 0 0 0 0 rgba(90, 113, 208, 0.11),
+    0 4px 16px 0 rgba(147, 175, 183, 0.33);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 0.5px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dosis", sans-serif !important;
+}
+p,
+span,
+a {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
